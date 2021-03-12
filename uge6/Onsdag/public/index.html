@@ -34,7 +34,7 @@
 
         <form id="formaddjoke">
           <input type="text" id="joketxt">
-          <button id="ex1add" type="submit" >Add joke</button>
+          <button id="ex1add" type="submit" >Edit joke</button>
         </form> 
 
         <P id="ex1joke"></P>
@@ -57,9 +57,9 @@
 
 
       <!-- This is were you should place your basic HTML for exercise-3 -->
-      <div id="ex3_html" style="display:none;">
+    <div id="ex3_html" style="display:none;">
         <h3>Ex-3</h3>
-        <p>Add your basic HTML for Exercise 3 here</p>
+       
 
         <div class="row" style="min-height: 5em;">
       <div class=" col-md-8 pre-scrollable" style="background-color: lightgrey;">
@@ -69,8 +69,7 @@
               <tr>
                 <th>Id</th>
                 <th>Age</th>
-                <th>Name
-                <th>
+                <th>Name</th>
                 <th>Gender</th>
                 <th>Email </th>
             </thead>
@@ -80,18 +79,53 @@
         </div>
         <div class="col-md-4" style="background-color: powderblue;">
           <h5>Find User</h5>
+          <form id="formUser">
+            <input type="number" id="userId">
+            <button id="userid" type="submit" >Get user</button>
+          </form> 
+          <p id="foundUser"></p>
         </div>
       </div>
       <div class="row" style="min-height: 5em;">
         <div class="col-md-4" style="background-color: powderblue;">
           <h5>Add User</h5>
+          <form id="formAddUser">
+            <label for="userAddAge">Age:</label>
+            <input type="number" id="userAddAge" ><br>
+            <label for="userAddName">Name:</label>
+            <input type="text" id="userAddName" ><br>
+            <label for="userAddGender">Gender:</label>
+            <input type="text" id="userAddGender" ><br>
+            <label for="userAddEmail">Email:</label>
+            <input type="email" id="userAddEmail" ><br>
+            <button id="userAddUser" type="submit" >Add user</button>
+          </form>
         </div>
         <div class="col-md-4" style="background-color: lightgrey;">
           <h5>Edit User</h5>
+          <form id="formEditUser">
+            <label for="userEditId">Id:</label>
+            <input type="number" id="userEditId" ><br>
+            <label for="userEditAge">Age:</label>
+            <input type="number" id="userEditAge" ><br>
+            <label for="userEditName">Name:</label>
+            <input type="text" id="userEditName" ><br>
+            <label for="userEditGender">Gender:</label>
+            <input type="text" id="userEditGender" ><br>
+            <label for="userEditEmail">Email:</label>
+            <input type="email" id="userEditEmail" ><br>
+            <button id="userEditUser" type="submit" >Edit user</button>
+          </form>
+          <button id="userFindUser" type="button" >Find user</button>
         </div>
         <div class="col-md-4" style="background-color: powderblue;">
           <h5>Delete User</h5>
+          <form id="formUserDelete">
+            <input type="number" id="userDeleteId">
+            <button id="userDeleteid" type="submit" >Delete user</button>
+          </form> 
         </div>
+        <p id="pex3"></p>
       </div>
       <!-- </div> -->
       <!-- End of HTML for exercise-3 -->

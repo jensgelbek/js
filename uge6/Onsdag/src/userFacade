@@ -1,0 +1,35 @@
+/*
+  This file is just added to show you how you can use ES6 exports
+  Observe, in index.js, how you can import
+*/
+
+//Setup some dummy test data
+const users = [
+    "A day without sunshine is like, night.",
+    "At what age is it appropriate to tell my dog that he's adopted?",
+    "I intend to live forever, or die trying",
+  ]
+  
+  function addUser(user) {
+    users.push(user);
+  }
+  
+  function getUserById(i) {
+    return users[i];
+  }
+  
+  function getUsers() {
+    return users;
+  }
+  
+  /* Make sure you understand what we create here, it involves VITAL JavaScript knowledge */
+  const userFacade = {
+    addUser,
+    getUserById,
+    getUsers
+  }
+  
+  
+  window.users = users; //Only for debugging
+  
+  export default userFacade;
